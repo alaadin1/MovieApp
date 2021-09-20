@@ -1,30 +1,24 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
 import React from 'react'
-import {SideBar} from './components/SideBar'
+//import {SideBar} from './components/SideBar'
+import {SearchBar} from './components/SearchBar'
 
 export class App extends React.Component{
+  constructor(props){
+    super(props);
+    this.state={
+      API_KEY:'26f2377688e749061480ecb834fe5dc8'
+    }
+  }
   render(){
     return (
-      
-      <div className="App">
-        <header className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <p>
-            Edit <code>src/App.js</code> and save to reload.
-          </p>
-          <a
-            className="App-link"
-            href="https://reactjs.org"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Learn React
-          </a>
-        </header>
+      <div>
+        <button onClick={this.random}></button>
+        <SearchBar API_KEY={this.state.API_KEY} />
       </div>
     );
   }
 }
-
 export default App;
+
