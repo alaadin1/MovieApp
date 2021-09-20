@@ -1,10 +1,9 @@
-//import logo from './logo.svg';
-import './App.css';
-import React from 'react'
-//import {SideBar} from './components/SideBar'
+import React from 'react';
+import "./App.css"
+import SideBar from "./components/SideBar"
 import {SearchBar} from './components/SearchBar'
 
-export class App extends React.Component{
+export class App extends React.Component {
   constructor(props){
     super(props);
     this.state={
@@ -13,11 +12,11 @@ export class App extends React.Component{
   }
   render(){
     return (
-      <div>
-        <button onClick={this.random}></button>
+      <div className = 'App'>
+        <SideBar/>
         <SearchBar API_KEY={this.state.API_KEY} />
       </div>
-    );
+    )
   }
 }
 export default App;
