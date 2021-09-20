@@ -14,8 +14,7 @@ function SideBar() {
                         <div id = 'arrow'> {val.icon_dropdown}</div>
                     </li>
                 )
-            
-            })} 
+            })}
             </ul>
         </div>
     )

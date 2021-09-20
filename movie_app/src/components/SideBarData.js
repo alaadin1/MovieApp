@@ -9,6 +9,7 @@
 
   export const  SidebarData = [
     {
+        //list 5 or 6 streaming services
         title: "Streaming Services",
         icon: <AppsIcon />,
         icon_dropdown: <KeyboardArrowDownIcon />
@@ -42,5 +43,6 @@
         icon_dropdown: <KeyboardArrowDownIcon />
         //dropdownitems:
     }
+
   ]
   
